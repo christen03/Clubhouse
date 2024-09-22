@@ -37,7 +37,7 @@ const Timer = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const formatTime = (num) => String(num).padStart(2, '0');
+  const formatTime = (num: number) => String(num).padStart(2, '0');
 
   return (
     <div className="flex justify-center gap-5 mt-8">
